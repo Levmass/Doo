@@ -1,0 +1,80 @@
+.footer {
+    margin: 0px 0px 100px 0px;
+		&__content {
+		}
+
+		&__row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+		}
+
+		&__column {
+		}
+
+		&__title {
+            margin: 0px 0px 26px 0px;
+            font-size: 13px;
+            line-height: 13px;
+            color: #6E6D7A;
+		}
+
+		&__list {
+            li {
+                &:not(:last-child) {
+                    margin: 0px 0px 26px 0px;
+                }
+            }
+		}
+
+		&__link {
+            font-size: 12px;
+            line-height: 13px;
+            color: #6E6D7A;
+		}
+
+		&__logo {
+		}
+
+		&__text {
+            p {
+                font-size: 13px;
+                line-height: 23px;
+                color: #6E6D7A;
+            }
+		}
+    @media (max-width: 680px) {
+        & {
+            margin: 0px 0px 50px 0px;
+        }
+        &__column {
+            &:last-child {
+                flex: 1 0 100%;
+                margin: 40px 0px 0px 0px;
+            }
+		}
+        &__list {
+            li {
+                &:not(:last-child) {
+                    margin: 0px 0px 15px 0px;
+                }
+            }
+		}
+    }    
+}
+
+.green-1 {
+    &:hover {
+        color: #74e6a9;
+    }
+}
+.green-2 {
+    &:hover {
+        color: #aaf3cd;
+    }
+}
+.violet {
+    &:hover {
+        color: #afbdfa;
+    }
+}
